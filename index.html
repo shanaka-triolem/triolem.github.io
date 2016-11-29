@@ -308,14 +308,20 @@
             
 		}
 		window.onresize = function(event) {          
-            
-            if($(window).width() < 1500) {
-                $('#cspio-headline').css('color', '#FFFFFF');
-            }
-            else{
-                $('#cspio-headline').css('color', '#000000');
-            }
+            colorChange();
         };
+		window.onload = function() {
+  colorChange();
+};
+		function colorChange()
+		{
+		    if($(window).width() < 1500) {
+			$('#cspio-headline').css('color', '#FFFFFF');
+		    }
+		    else{
+			$('#cspio-headline').css('color', '#000000');
+		    }
+		}
             
 		$('#cspio-content').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
 			function(){
