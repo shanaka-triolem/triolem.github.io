@@ -1,222 +1,415 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Stellar by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-		// Add the new slick-theme.css if you want the default styling
-		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-	</head>
-	<body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- TITLE  -->
+  <title>Triolem</title>
+  <!-- FAVICONS  -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="images/favicons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="images/favicons/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="Triolem"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="images/favicons/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
+  <!-- FONTS  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="font/triolem-font.css" rel="stylesheet">
+  <!-- VENDOR STYLES  -->
+  <link href="vendor/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="vendor/bootstrap-4.0.0-beta/dist/css/bootstrap-grid.min.css" rel="stylesheet"> -->
+  <link href="vendor/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/animate css/animate.css" rel="stylesheet">
+  <link href="vendor/themify-icons/themify-icons.css" rel="stylesheet">
+  <link href="vendor/Magnific-Popup/dist/magnific-popup.css" rel="stylesheet">
+  <link href="vendor/slick/slick.css" rel="stylesheet">
+  <link href="vendor/Linearicons/Web Font/style.css" rel="stylesheet">
+  <link href="vendor/Outline/style.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <!-- STYLES  -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <!-- LOADER  -->
+  <div class="page-loader">
+    <div class="loader">Loading...</div>
+  </div>
+  <!-- NAV  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-transparent navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="navbar-brand-logo">
+          <img src="images/favicons/logo.svg" width="50" height="50" alt="">
+        </div>
+        <div class="navbar-brand-name">
+          <span class="triolem-text">Triolem</span>
+          <br />
+          <span class="triolem-moto">Innovation &amp; Excellence</span>
+        </div>
+        <div class="clear"></div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1 style="color:#ffffff;">triolem</h1>
-						<!--<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>-->
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">Choose Us</a></li>
-							<li><a href="#second">Key Offerings</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-								<div class="hero">
-									<div>
-										<span class="image main"><img src="images/1.svg" alt=""></span>
-										</div>
-									<div>
-										<span class="image main"><img src="images/2.svg" alt=""></span>
-										</div>
-									<div>
-										<span class="image main"><img src="images/3.svg" alt=""></span>
-										</div>
-								</div>
-							<section id="intro" class="main" style="margin-top: -5em;">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Who We Are</h2>
-										</header>
-										<p>Triolem is a custom software services firm based in Colombo, Sri Lanka, and we also have a strong presence in Australia, New Zealand and Canada. We serves the global market with high quality software services for small and medium companies, specializing in system design, application development, system integration and business automation. We have extensive experience in many diverse areas in software development and our staff of professionals has worked with a wide array of platforms, languages, and tools in the course of our various projects.</p>
-										<ul class="actions">
-										</ul>
-									</div>
-								</div>
-							</section>
-
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Choose Us</h2>
-								</header>
-								<p>The following competitive advantages allow our company to offer better quality of service to our customer.</p>
-								<ul class="features">
-									<li>
-										<span class="icon major style1 fa-random"></span>
-										<h3>Flexible Methods</h3>
-										<p>With agile software development process, we support clients through the entire application development life cycle - from analyzing their IT requirements to developing focused solutions and maintenance, and on-going support for the applications. Also it provides the ability to make changes in the product being developed or in how it is developed, even relatively late in development, without being too disruptive. </p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-warning"></span>
-										<h3>Risk-Free Project Execution</h3>
-										<p>Our application development methodology helps clients to understand how to align IT more closely with the needs of the business and extract greater value from their IT investments. With approach we follow to execute projects, would help to reduce the risk to zero during project execution.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-star"></span>
-										<h3>Quality Guarantee</h3>
-										<p>Our in-depth industry knowledge, technical expertise and robust processes environments help us deliver measurable business results, transforming our customers’ application development investments into reliable and future-proof applications. The methodologies we follow, would benefit to achieve high quality in all products and services we delive.</p>
-									</li>
-								</ul>
-								<footer class="major">
-								</footer>
-							</section>
-
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Key Offerings</h2>
-									<p>Our technical and domain expertise on different areas could help you to bring your organization to a next level.</p>
-								</header>
-								<!--<ul class="statistics">
-									<li class="style1">
-										<span class="icon fa-code-fork"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open-o"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-diamond"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>-->
-								<ul class="services">
-									<li>
-										<span class="icon alt fa-cog style1 styleFont"></span>
-										<h3>Enterprise Software Development</h3>
-										<p>Our enterprise solutions can help your organization to increase efficiency, reduce cost, and risk and accelerate your business. We are expertise in building Healthcare, Leisure, Education, Finance, Media and Entertainment domains and help to reduce cost of maintenance and help to achieve your business goals.</p>
-									</li>
-									<li>
-										<span class="icon alt style5 styleFont fa-users"></span>
-										<h3>Portal and Collaboration</h3>
-										<p>Our Portal and Collaboration solutions assist your organization to manage Web applications & integrating systems, managing knowledge, supporting collaboration and enhancing security across the enterprise. We design and build enterprise productivity solutions that leverage SharePoint, CRM, eCommerce and Cloud platform’s capabilities to enhance the efficiencies of the company.</p>
-									</li>
-									<li>
-										<span class="icon alt style5 styleFont fa-handshake-o"></span>
-										<h3>Managed Services</h3>
-										<p>Our managed services support professionals are focused on customer issue resolution & operations continuity to maintain positive end-user experience. We provide users with the support they need to get the most out of their enterprise applications and software investments.</p>
-									</li>
-									<li>
-										<span class="icon alt style5 styleFont fa-line-chart"></span>
-										<h3>Business Intelligence & Analytics</h3>
-										<p>We are capable of building advance applications to transform of your raw data into meaningful and useful information for business analysis purposes. In addition, we have expertise to integrate with industry standard applications.</p>
-									</li>
-								</ul>
-									<footer class="major">
-								</footer>
-							</section>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>							
-							<h2>Sri Lanka</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>3/3 Kashyapa Road, Kalubowila.</dd>
-								<dt>Phone</dt>
-								<dd>+94 716 383 120</dd>
-								<dt>Email</dt>
-								<dd><a href="mailto:contact-us@triolem.com">contact-us@triolem.com</a></dd>
-							</dl>
-						</section>
-						<section>
-							<h2>Connect with Us</h2>
-							<ul class="icons">
-								<li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon fa-youtube alt"><span class="label">YouTube</span></a></li>
-							</ul>
-						</section>
-						<!--<section>							
-							<h2>Australia</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="mailto:contact-us.au@triolem.com">contact-us.au@triolem.com</a></dd>
-							</dl>
-						</section>
-						<section>							
-							<h2>Canada</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="mailto:contact-us.ca@triolem.com">contact-us.ca@triolem.com</a></dd>
-							</dl>
-						</section>-->
-						<div class="footer-ul">
-						</div>
-						<p class="copyright">&copy; <a href="http://www.triolem.com">triolem.com</a> 2017.</p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-			<script type="text/javascript" src="slick/slick.min.js"></script>	
-			<script type="text/javascript">
-				$(document).ready(function(){
-					$('.hero').slick({
-						autoplay: true,
-						autoplaySpeed: 5000
-					});
-				});
-			</script>
-	</body>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- HOME  -->
+  <section id="home" class="section home">
+    <ul class="hero-slider">
+      <li class="hero-img hero-img-center" style="background-image: url('images/b2.jpg');">
+        <div class="hero-title">
+          <div class="hero-content">
+            <div class="header-size-1 no-line-height padding-bt-10 font-sec">Triolem Runs IT</div>
+              <div class="header-size-4 padding-bt-10 font-sec">Moving your business to a digital world</div>
+            <a class="section-scroll btn btn-border-white btn-round" href="#services">Learn More</a>
+          </div>
+        </div>
+      </li>
+      <li class="hero-img hero-img-right" style="background-image: url('images/b1.jpeg');">
+        <div class="hero-title">
+          <div class="hero-content">
+            <div class="header-size-1 no-line-height padding-bt-10 font-sec">we think differently</div>
+              <div class="header-size-4 padding-bt-10 font-sec">That might be exactly why we benefit each other</div>
+            <a class="section-scroll btn btn-border-white btn-round" href="#services">Learn More</a>
+          </div>
+        </div>
+      </li>
+      <li class="hero-img hero-img-center" style="background-image: url('images/b3.jpg');">
+        <div class="hero-title">
+          <div class="hero-content">
+            <div class="header-size-1 no-line-height padding-bt-10 font-sec">The right crew</div>
+              <div class="header-size-4 padding-bt-10 font-sec">Makes a difference</div>
+            <a class="section-scroll btn btn-border-white btn-round" href="#services">Learn More</a>
+          </div>
+        </div>
+      </li>
+      <li class="hero-img hero-img-center" style="background-image: url('images/b5.jpg');">
+        <div class="hero-title">
+          <div class="hero-content">
+            <div class="header-size-1 no-line-height padding-bt-10 font-sec">Grow</div>
+              <div class="header-size-4 padding-bt-10 font-sec">Let us help your business</div>
+            <a class="section-scroll btn btn-border-white btn-round" href="#services">Learn More</a>
+          </div>
+        </div>
+      </li>
+      <li class="hero-img hero-img-center" style="background-image: url('images/b6.jpg');">
+        <div class="hero-title">
+          <div class="hero-content">
+            <div class="header-size-1 no-line-height padding-bt-10 font-sec">You dream it,</div>
+              <div class="header-size-4 padding-bt-10 font-sec">We build it!</div>
+            <a class="section-scroll btn btn-border-white btn-round" href="#services">Learn More</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- HOME BREAK  -->
+  <section class="module-small bg-light-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col sm-break text-center">
+          <!-- <div>
+            <h3 class="font-sec">Who We Are?</h3>
+            <p>Triolem is a custom software services firm based in Colombo, Sri Lanka, and we also have a strong presence in Australia, New Zealand and Canada. We serves the global market with high quality software services for small and medium companies, specializing in system design, application development, system integration and business automation. We have extensive experience in many diverse areas in software development and our staff of professionals has worked with a wide array of platforms, languages, and tools in the course of our various projects.</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SERVICES  -->
+  <section class="section module services" id="services">
+    <div class="container">
+      <div class="row ">
+        <div class="col ml-auto text-center module-title-container">
+          <h2 class="module-title font-sec" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">Our Services</h2>
+          <div class="module-subtitle font-sec-quate">The following competitive advantages allow our company to offer better quality of service to our customer.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 odd sev1">
+          <div class="service-item">
+            <div class="service-icon" data-aos="zoom-in"><span class="ti-Line-Cogs"></span></div>
+            <h3 class="service-title font-sec">Application development</h3>
+            <p>With a well-defined and mature application development process, We supports clients through the entire application development life cycle.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 even sev2">
+          <div class="service-item">
+            <div class="service-icon" data-aos="zoom-in"><span class="ti-Line-Star"></span></div>
+            <h3 class="service-title font-sec">Quality Assurance</h3>
+            <p>Our in-depth domain and industry-focused testing services ensure applications meet growing business needs with high performance and availability.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 odd sev3">
+          <div class="service-item">
+            <div class="service-icon" data-aos="zoom-in"><span class="ti-Line-People-1"></span></div>
+            <h3 class="service-title font-sec">Enterprise portals</h3>
+            <p>Our enterprise solutions can help your organization to increase efficiency, reduce cost, and risk and accelerate your business.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 even sev4">
+          <div class="service-item">
+            <div class="service-icon" data-aos="zoom-in"><span class="ti-Line-Smartphone-2"></span></div>
+            <h3 class="service-title font-sec">Mobile app development</h3>
+            <p>We specialize in IOS and Android mobile app solutions. From hybrid apps to complex native mobile apps. We create the ultimate user experience.</p>
+          </div>
+        </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 odd sev5">
+            <div class="service-item">
+              <div class="service-icon" data-aos="zoom-in"><span class="ti-Line-Tool"></span></div>
+              <h3 class="service-title font-sec">Managed services</h3>
+              <p>Our managed services support professionals are focused on customer issue resolution &amp; operations continuity to maintain positive end-user experience.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 even sev6">
+            <div class="service-item">
+              <div class="service-icon" data-aos="zoom-in"><span class="ti-Line-Chart-1"></span></div>
+              <h3 class="service-title font-sec">BI &amp; analytics solutions</h3>
+              <p>We are capable of building advance applications to transform of your raw data into meaningful and useful information for business analysis purposes.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 odd sev7">
+            <div class="service-item">
+              <div class="service-icon" data-aos="zoom-in"><span class="ti-Line-Cloud-6"></span></div>
+              <h3 class="service-title font-sec">Cloud Solutions</h3>
+              <p>We’re helping you to become intuitively digital by using the cloud as part of a foundation to derive new insights and unlock new opportunities for creating richer user experiences.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 even sev8">
+            <div class="service-item">
+              <div class="service-icon" data-aos="zoom-in"><span class="ti-Line-Chat-2"></span></div>
+              <h3 class="service-title font-sec">IT Consultancy</h3>
+              <p>Like many of our customers, IT is probably not your core business.Trying to solve all of your IT challenges internally can become a major distraction. </p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- FEATURES BREAK  -->
+  <section class="module-small bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col break text-center">
+          <div>
+            <h3 class="font-sec">Are you excited to start your project?</h3>
+            <p>We are always open to interesting projects.</p>
+            <a class="section-scroll btn btn-border-white btn-round" href="#contact">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FEATURES  -->
+  <section class="section module features" id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col ml-auto text-center module-title-container">
+          <h2 class="module-title font-sec" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">Our features</h2>
+          <div class="module-subtitle font-sec-quate">Our technical and domain expertise on different areas could help you to bring your organization to a next level.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <div class="feature-item">
+            <h3 class="feature-title font-alt">Flexible Methods</h3>
+            <div class="feature-icon" data-aos="zoom-in-right"><span class="ti-Line-Shuffle"></span></div>
+            With agile software development process, we support clients through the entire application development life cycle - from analyzing their IT requirements to developing focused solutions and maintenance, and on-going support for the applications. Also it provides the ability to make changes in the product being developed or in how it is developed, even relatively late in development, without being too disruptive.
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <div class="feature-item">
+            <h3 class="feature-title font-alt">Risk-Free Project Execution</h3>
+            <div class="feature-icon" data-aos="zoom-in"><span class="ti-Line-Refresh-1"></span></div>
+            Our application development methodology helps clients to understand how to align IT more closely with the needs of the business and extract greater value from their IT investments. With approach we follow to execute projects, would help to reduce the risk to zero during project execution.
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <div class="feature-item">
+            <h3 class="feature-title font-alt">Quality Guarantee</h3>
+            <div class="feature-icon" data-aos="zoom-in-left"><span class="ti-Line-Thumbs-up"></span></div>
+            Our in-depth industry knowledge, technical expertise and robust processes environments help us deliver measurable business results, transforming our customers’ application development investments into reliable and future-proof applications. The methodologies we follow, would benefit to achieve high quality in all products and services we delive.
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <div class="service-icon"><span class="ti-Line-Shuffle"></span></div>
+              <h3 class="service-title font-sec">Flexible Methods</h3>
+              <p>With agile software development process, we support clients through the entire application development life cycle - from analyzing their IT requirements to developing focused solutions and maintenance, and on-going support for the applications. Also it provides the ability to make changes in the product being developed or in how it is developed, even relatively late in development, without being too disruptive.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <div class="service-icon"><span class="ti-Line-Star"></span></div>
+              <h3 class="service-title font-sec">Quality Guarantee</h3>
+              <p>Our in-depth industry knowledge, technical expertise and robust processes environments help us deliver measurable business results, transforming our customers’ application development investments into reliable and future-proof applications. The methodologies we follow, would benefit to achieve high quality in all products and services we delive.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <div class="service-icon"><span class="ti-Line-Refresh-1"></span></div>
+              <h3 class="service-title font-sec">Risk-Free Project Execution</h3>
+              <p>Our application development methodology helps clients to understand how to align IT more closely with the needs of the business and extract greater value from their IT investments. With approach we follow to execute projects, would help to reduce the risk to zero during project execution.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <div class="service-icon"><span class="ti-Line-Thumbs-up"></span></div>
+              <h3 class="service-title font-sec">Dedicated support</h3>
+              <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT US BREAK  -->
+  <section class="module-small bg-dark testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col break text-center">
+          <div>
+            <h3 class="font-sec">Circle More</h3>
+            <p>Coming Soon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT US  -->
+  <section class="section module contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col ml-auto text-center module-title-container">
+          <h2 class="module-title font-sec" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">get in touch</h2>
+          <div class="module-subtitle font-sec-quate">we are happy to listen</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <form id="contactForm" role="form" method="post" action="php/contact.php">
+            <div class="form-group">
+              <label class="sr-only" for="name">Name</label>
+              <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="email">Email</label>
+              <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-block btn-round btn-dark" id="cfsubmit" type="submit">Submit</button>
+            </div>
+          </form>
+          <div class="ajax-response font-alt" id="contactFormResponse"></div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="google-map">
+            <iframe src="https://snazzymaps.com/embed/20531" width="100%" height="200px" style="border:none;"></iframe>
+          </div>
+          <div class="row contact-info-wrap">
+            <div class="col-sm-6">
+              <div>
+                <h5 class="font-sec">Office Address</h5>
+                <address class="contact-info">
+                  <span>3/3 Kashyapa Road</span>,
+                  <br>
+                  <span>Kalubowila</span>,
+                  <br>
+                  <span>Sri Lanka</span>
+                </address>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div>
+                <h5 class="font-sec">Contact Information</h5>
+                <div class="contact-info">
+                  Local: +94 716 383 120
+                  <br>
+                  Mobile: +94 716 383 120
+                  <br>
+                  <a href="mailto:contact-us@triolem.com">contact-us@triolem.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER  -->
+  <footer class="footer bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-4 text-center">
+          <p class="copyright font-sec">&copy; 2017&nbsp;<a href="index.html">Triolem</a>, All Rights Reserved</p>
+        </div>
+        <div class="col-lg-6  col-md-7 text-center">
+          <ul class="footer-social-block">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-github"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-1 col-md-1 text-center">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div> -->
+  <!-- VENDOR JAVASCRIPTS  -->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendor/popper/popper.js"></script>
+  <script src="vendor/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
+  <script src="vendor/slick/slick.min.js"></script>
+  <script src="vendor/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+  <script src="vendor/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <!-- JAVASCRIPTS  -->
+  <script src="js/main.js"></script>
+</body>
 </html>
