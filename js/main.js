@@ -26,10 +26,13 @@
       AOS.init();
 
       $('#contactForm').submit(function( event ) {
-            alert( "Handler for .submit() called." );
-            event.preventDefault();
-            alert();
-            console.log($('#contactForm').serializeArray());
+            if (document.getElementById("contactForm").checkValidity()) {
+                document.getElementById("contactForm").submit();
+            }
+            else {
+                event.preventDefault();
+                console.log($('#contactForm').serializeArray());
+            }
       });
         
       // Scroll Triggers
