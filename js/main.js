@@ -25,7 +25,7 @@
       navbarAnimation(navbar, home, navHeight);
       AOS.init();
 
-      $('#cfsubmit').submit(function( event ) {
+      $('#contactForm').submit(function( event ) {
             alert( "Handler for .submit() called." );
             event.preventDefault();
             alert();
