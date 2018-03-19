@@ -25,10 +25,11 @@
       navbarAnimation(navbar, home, navHeight);
       AOS.init();
 
-      
-      $("#cfsubmit").click(function() {
-        alert();
-        console.log( $("#contactForm").serializeArray());
+      $('#contactForm').validate({
+        submitHandler: function(form) {
+            alert();
+            console.log($(form).serializeArray());
+        }
       });
         
       // Scroll Triggers
