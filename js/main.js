@@ -29,6 +29,45 @@
             if (document.getElementById("contactForm").checkValidity()) {
                 event.preventDefault();
                 console.log($('#contactForm').serializeArray());
+                var formData = $('#contactForm').serializeArray();
+                var passingData = {
+                    "fromEmail": formData[1].value,
+                    "fromUser": formData[0].value,
+                    "fromSubject": '',
+                    "fromBody": formData[2].value,
+                    "site": "TRIOLEM"
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "https://contactustriolem.azurewebsites.net/api/HttpTriggerCSharp1?code=dEhJ181MJpPdC41S6bxlGc/7/jXNLCL4aPDLt3BqbsfpOdQ44arXGQ==",
+                    data: passingData,
+                    beforeSend: function() {
+                        $('#contactFormResponse').addClass("ajax-response font-alt progress-response show");
+                        $('#contactForm').addClass("hide");
+                        $('#contactFormResponse').html("Submitting");
+                    },
+                    success: function(msg) {
+
+                        // Message was sent
+                        if (msg == '') {
+                            $('#contactFormResponse').addClass("ajax-response font-alt success-response show");
+                            $('#contactFormResponse').html("Your message was sent, thank you!");
+                        }
+                        // There was an error
+                        else {
+                            $('#contactFormResponse').addClass("ajax-response font-alt fail-response show");
+                            $('#contactFormResponse').html("Failed to send your message");
+                            $('#contactForm').addClass("show");
+                        }
+                    },
+                    error: function(error) {
+                        console.log(error);
+                        $('#contactFormResponse').addClass("ajax-response font-alt fail-response show");
+                        $('#contactFormResponse').html("Failed to send your message.");
+                        $('#contactForm').addClass("show");
+                    }
+                });
             }
             else {
                 event.preventDefault();
