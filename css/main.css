@@ -545,6 +545,12 @@ PAGE LOADER
     padding: 0.4em;
 }
 
+.progress-response {
+    background-color: #d6d6d6;
+    text-align: center;
+    padding: 0.4em;
+}
+
 .show {
     display: block;
 }
