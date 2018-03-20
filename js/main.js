@@ -27,11 +27,11 @@
 
       $('#contactForm').submit(function( event ) {
             if (document.getElementById("contactForm").checkValidity()) {
-                document.getElementById("contactForm").submit();
+                event.preventDefault();
+                console.log($('#contactForm').serializeArray());
             }
             else {
                 event.preventDefault();
-                console.log($('#contactForm').serializeArray());
             }
       });
         
