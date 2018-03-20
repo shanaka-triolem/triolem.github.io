@@ -532,3 +532,23 @@ PAGE LOADER
     transform: rotate(360deg);
   }
 }
+
+.success-response {
+    background-color: #c6e4c7;
+    text-align: center;
+    padding: 0.4em;
+}
+
+.fail-response {
+    background-color: #e4c6c6;
+    text-align: center;
+    padding: 0.4em;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
