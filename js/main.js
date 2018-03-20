@@ -45,6 +45,7 @@
                     beforeSend: function() {
                         $('#contactFormResponse').addClass("ajax-response font-alt progress-response show");
                         $('#contactForm').addClass("hide");
+                        $('#contactFormResponse').removeClass("hide");
                         $('#contactFormResponse').html("Submitting");
                     },
                     success: function(msg) {
@@ -59,6 +60,7 @@
                             $('#contactFormResponse').addClass("ajax-response font-alt fail-response show");
                             $('#contactFormResponse').html("Failed to send your message");
                             $('#contactForm').addClass("show");
+                            $('#contactForm').removeClass("hide");
                         }
                     },
                     error: function(error) {
@@ -66,6 +68,7 @@
                         $('#contactFormResponse').addClass("ajax-response font-alt fail-response show");
                         $('#contactFormResponse').html("Failed to send your message.");
                         $('#contactForm').addClass("show");
+                        $('#contactForm').removeClass("hide");
                     }
                 });
             }
