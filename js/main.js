@@ -44,6 +44,7 @@
                     data: passingData,
                     beforeSend: function() {
                         $('#contactFormResponse').addClass("ajax-response font-alt progress-response show");
+                        $('#contactFormResponse').removeClass("fail-response success-response");
                         $('#contactForm').addClass("hide");
                         $('#contactFormResponse').removeClass("hide");
                         $('#contactFormResponse').html("Submitting");
@@ -58,6 +59,7 @@
                         // There was an error
                         else {
                             $('#contactFormResponse').addClass("ajax-response font-alt fail-response show");
+                            $('#contactFormResponse').removeClass("progress-response");
                             $('#contactFormResponse').html("Failed to send your message");
                             $('#contactForm').addClass("show");
                             $('#contactForm').removeClass("hide");
@@ -66,6 +68,7 @@
                     error: function(error) {
                         console.log(error);
                         $('#contactFormResponse').addClass("ajax-response font-alt fail-response show");
+                        $('#contactFormResponse').removeClass("progress-response");
                         $('#contactFormResponse').html("Failed to send your message.");
                         $('#contactForm').addClass("show");
                         $('#contactForm').removeClass("hide");
