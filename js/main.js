@@ -55,6 +55,7 @@
                         if (msg == '') {
                             $('#contactFormResponse').addClass("ajax-response font-alt success-response show");
                             $('#contactFormResponse').html("Your message was sent, thank you!");
+                            $('#contactFormResponse').removeClass("fail-response progress-response");
                         }
                         // There was an error
                         else {
